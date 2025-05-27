@@ -1,0 +1,11 @@
+; Inicializar registros con valores inmediatos desde RAM
+load #1E a      ; RAM[1E] → A  (supón que RAM[1E] = 10)
+load #1F b      ; RAM[1F] → B  (supón que RAM[1F] = 20)
+add a 5 c
+add a b d
+sub b 3 a
+sub b a c
+store c #1D
+load a b
+nop
+hlt
