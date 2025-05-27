@@ -1,11 +1,12 @@
 ; Inicializar registros con valores inmediatos desde RAM
-load #1E a      ; RAM[1E] → A  (supón que RAM[1E] = 10)
-load #1F b      ; RAM[1F] → B  (supón que RAM[1F] = 20)
-add a 5 c
-add a b d
-sub b 3 a
-sub b a c
-store c #1D
-load a b
+load #1E A      ; RAM[1E] → A  (supón que RAM[1E] = 10)
+load #1F B      ; RAM[1F] → B  (supón que RAM[1F] = 20)
+add C 5 C
+add A B D
+sub D 3 D
+sub D A D
+store D #1D
+load A B
+store B #1C
 nop
 hlt
